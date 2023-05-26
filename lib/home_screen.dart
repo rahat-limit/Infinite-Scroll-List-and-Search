@@ -13,7 +13,32 @@ class HomeScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [SearchWidget(), List()],
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Flexible(
+                  child: Text(
+                    'Infinite Scroll List and Search',
+                    style: TextStyle(fontSize: 30),
+                  ),
+                ),
+                SizedBox(width: 10),
+                Image(
+                  image: AssetImage('assets/searching.png'),
+                  width: 100,
+                  height: 100,
+                ),
+                SizedBox(width: 10),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            SearchWidget(),
+            List()
+          ],
         ),
       )),
     );
