@@ -8,6 +8,25 @@
    <img src = "https://github.com/rahat-limit/Infinite-Scroll-List-and-Search/blob/master/assets/simulator_screenshot_4EE87418-7023-4CE9-9D17-63B3E280C39E.png" width=200>
 </p>
 
+#Packages
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.3.6
+  cupertino_icons: ^1.0.2
+  dio: ^5.1.2
+  freezed_annotation: ^2.2.0
+  synchronized: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.3.4
+  build_runner: ^2.4.4
+```
+
 ## How to integrate
 ### API Calls
 ```dart
@@ -44,7 +63,7 @@ class ApiService {
   }
 }
 ```
-### State for All Posts
+### State for All Posts 
 ```dart
 
 part 'post_provider.freezed.dart';
